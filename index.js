@@ -5,7 +5,9 @@ let getListTemplateRender = require('./src/getListTemplateRender');
 
 hexo.extend.tag.register('douban', function (args) {
   let userName = args[0];
-  var type = args[1];
+  let type = args[1];
+  let pageStart = args[2];
+  let pageEnd = args[3];
 
   switch (type) {
     case DoubanTypeEnum.watchedMovies:
