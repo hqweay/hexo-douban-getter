@@ -6,6 +6,6 @@
   "repository": "git",
   "author": "hqweay",
   "dependencies": {
-    "markall-douban-backup": "https://github.com/hqweay/hexo-douban-getter.git"
+    "markall-douban-getter": "https://github.com/hqweay/markall-douban-getter.git"
   }
 }
