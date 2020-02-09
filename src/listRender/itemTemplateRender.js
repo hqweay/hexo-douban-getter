@@ -8,14 +8,17 @@ function movieTemplateRender(item) {
       </div>
       <div class ="title">
         <a href="${item.url}" target="_blank">
-        ${item.name}
+        ${item.title}
         </a>
       </div>
       <div class ="comment">
         评论：${item.comment}
       </div>
       <div class ="tags">
-        标签：${item.oldTags}
+        标签：${item.tags}
+      </div>
+        <div class ="date">
+        标记时间：${item.date}
       </div>
     </div>`;
 }
@@ -43,7 +46,7 @@ function bookTemplateRender(item) {
         评论：${item.comment}
       </div>
       <div class ="tags">
-        标签：${item.oldTags}
+        标签：${item.tags}
       </div>
     </div>`;
 }
@@ -71,7 +74,7 @@ function musicTemplateRender(item) {
         评论：${item.comment}
       </div>
       <div class ="tags">
-        标签：${item.oldTags}
+        标签：${item.tags}
       </div>
     </div>`;
 }
@@ -99,7 +102,7 @@ function gameTemplateRender(item) {
         评论：${item.comment}
       </div>
       <div class ="tags">
-        标签：${item.oldTags}
+        标签：${item.tags}
       </div>
     </div>`;
 }
