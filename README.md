@@ -1,3 +1,13 @@
+# Demo
+
+做了两个页面阔以看看效果：
+
+[豆瓣标记为看过影视列表展示](https://leay.net/2020/02/09/watched-movies/)
+
+[豆瓣标记为读过书籍列表展示](https://leay.net/2020/02/09/read-books/)
+
+Demo 随时可能会失效。
+
 # 使用
 
 ```bash
@@ -44,9 +54,9 @@ const DoubanTypeEnum = {
 
 该项目使用了 [markall-douban-getter](https://github.com/hqweay/markall-douban-getter) 提供的获取豆瓣标记数据的方法。
 
-接下来打算把展示某一条条目信息也做了...
-
-还有就是数据在本地缓存一下...
+- [ ] 按条目 id 展示条目信息
+- [ ] 数据缓存至本地
+- [ ] ~~给做一些可视化~~（遇到了一些难点，可能做不了。）
 
 # 展示
 
@@ -61,3 +71,7 @@ const DoubanTypeEnum = {
 ## ...
 
 其它的就不一一列举了...
+
+# 说明
+
+开发过程中参考了 [hexo-tag-douban](
