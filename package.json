@@ -1,0 +1,11 @@
+{
+  "name": "hexo-douban-getter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "git",
+  "author": "hqweay",
+  "dependencies": {
+    "markall-douban-backup": "https://github.com/hqweay/hexo-douban-getter.git"
+  }
+}
