@@ -52,8 +52,6 @@ const DoubanTypeEnum = {
 
 # TODO
 
-该项目使用了 [markall-douban-getter](https://github.com/hqweay/markall-douban-getter) 提供的获取豆瓣标记数据的方法。
-
 - [ ] 按条目 id 展示条目信息
 - [ ] 数据缓存至本地
 - [ ] ~~给做一些可视化~~（遇到了一些难点，可能做不了。）
@@ -74,4 +72,7 @@ const DoubanTypeEnum = {
 
 # 说明
 
-开发过程中参考了 [hexo-tag-douban](
+该项目使用了 [markall-douban-getter](https://github.com/hqweay/markall-douban-getter) 提供的获取豆瓣标记数据的方法。
+
+开发过程中参考了 [hexo-tag-douban](https://github.com/YuyingWu/hexo-tag-douban)
+
