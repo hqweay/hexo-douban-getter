@@ -1,11 +1,18 @@
 {
   "name": "hexo-douban-getter",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "license": "MIT",
-  "repository": "git",
-  "author": "hqweay",
-  "dependencies": {
-    "markall-douban-getter": "https://github.com/hqweay/markall-douban-getter.git"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hqweay/hexo-douban-getter.git"
+  },
+  "keywords": [
+    "hexo",
+    "hexo-tag",
+    "hexo-douban-getter",
+    "douban"
+  ],
+  "author": "Hqweay",
+  "license": "MIT"
 }
