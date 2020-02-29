@@ -72,7 +72,7 @@ const DoubanTypeEnum = {
 
 # 说明
 
-该项目使用了 [markall-douban-getter](https://github.com/hqweay/markall-douban-getter) 提供的获取豆瓣标记数据的方法。
+该项目使用了 [douban-getter](https://github.com/hqweay/douban-getter) 提供的获取豆瓣标记数据的方法。
 
 开发过程中参考了 [hexo-tag-douban](https://github.com/YuyingWu/hexo-tag-douban)
 
