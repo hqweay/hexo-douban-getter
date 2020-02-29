@@ -16,6 +16,6 @@
   "author": "Hqweay",
   "license": "MIT",
   "dependencies": {
-    "markall-douban-backup": "https://github.com/hqweay/markall-douban-getter.git"
+    "douban-getter": "https://github.com/hqweay/douban-getter.git"
   }
 }

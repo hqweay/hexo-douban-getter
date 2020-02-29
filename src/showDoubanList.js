@@ -1,4 +1,4 @@
-const { createDoubanDataGetter, DoubanTypeEnum } = require('markall-douban-backup');
+const { createDoubanDataGetter, DoubanTypeEnum } = require('douban-getter');
 let getListTemplateRender = require('hexo-douban-getter/src/listRender/getListTemplateRender');
 
 function showDoubanList(userName, type, pageStart, pageEnd) {
