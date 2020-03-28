@@ -1,12 +1,8 @@
 # Demo
 
-做了两个页面阔以看看效果：
+**Demo** ：（页面可能会失效。）
 
-[豆瓣标记为看过影视列表展示](https://leay.net/2020/02/09/watched-movies/)
-
-[豆瓣标记为读过书籍列表展示](https://leay.net/2020/02/09/read-books/)
-
-Demo 随时可能会失效。
+[豆瓣标记为看过影视列表展示 Demo](https://leay.net/2020/02/09/hexo-douban-getter/#展示 Demo)
 
 # 使用
 

@@ -1,4 +1,4 @@
-const { createDoubanDataGetter, DoubanTypeEnum } = require('markall-douban-backup');
+const { createDoubanDataGetter, DoubanTypeEnum } = require('douban-getter');
 let getTagCloud = require('hexo-douban-getter/src/chartRender/getTagCloud');
 
 function showCharts(userName, type, pageStart, pageEnd) {

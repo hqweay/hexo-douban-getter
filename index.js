@@ -14,7 +14,8 @@ hexo.extend.tag.register('douban', function (args) {
     type = args[1];
     pageStart = args[2];
     pageEnd = args[3];
-    return showDoubanList(userName, type, pageStart, pageEnd);
+    titleLevel = args[4] || "h3";
+    return showDoubanList(userName, type, pageStart, pageEnd, titleLevel);
   }
 
 
