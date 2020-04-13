@@ -1,14 +1,22 @@
+# ChangeLog
+
+2020-04-13：支持某类别标记数据的展示，并提供状态间的切换按钮。比如书籍有看过、在看、想看三种状态，现在可以在一个页面展示并切换显示。
+
 # Demo
 
 **Demo** ：
 
-[豆瓣标记为看过影视列表展示 Demo](https://leay.net/2020/02/09/hexo-douban-getter/#展示-demo)
+[豆瓣的书籍标记数据展示 Demo](https://leay.net/2020/02/09/hexo-douban-getter/#展示-demo)
 
 # 使用
 
 ```bash
 yarn add https://github.com/hqweay/hexo-douban-getter.git
 ```
+
+## 展示单项标记数据
+
+展示看过的影视、读过的书籍……
 
 ```markdown
 // post.md
@@ -18,7 +26,7 @@ yarn add https://github.com/hqweay/hexo-douban-getter.git
 {% douban "hqweay" "watchedMovies" 1 3 h3 %}
 ```
 
-## 参数说明
+### 参数说明
 
 | 参数       | 说明                                    |
 | ---------- | --------------------------------------- |
@@ -28,7 +36,7 @@ yarn add https://github.com/hqweay/hexo-douban-getter.git
 | pageEnd    | 获取数据结束页                          |
 | titleLevel | 【可选】标记数据的标题层级，默认为 h3。 |
 
-## type 支持参数
+### type 支持参数
 
 ```javascript
 const DoubanTypeEnum = {
@@ -47,27 +55,51 @@ const DoubanTypeEnum = {
 }
 ```
 
+## 展示某类别标记数据
+
+展示影视对应的看过、在看、想看，书籍对应的读过、在读、想读……三种状态的标记数据。
+
+提供切换按钮。
+
+```markdown
+// post.md
+{% douban type userName pageStart pageEnd titleLevel %}
+
+// example
+{% douban book "hqweay" 1 1 %}
+```
+
+## 参数说明
+
+| 参数       | 说明                                    |
+| ---------- | --------------------------------------- |
+| type       | 标记数据类型（支持类型见下文）          |
+| userName   | 豆瓣 id                                 |
+| pageStart  | 获取数据开始页                          |
+| pageEnd    | 获取数据结束页                          |
+| titleLevel | 【可选】标记数据的标题层级，默认为 h3。 |
+
+### type 支持参数
+
+* book
+* movie
+* music
+* game
+
 # TODO
 
-- [ ] ~~按条目 id 展示条目信息~~(通过条目 id 查询信息的页面与标注页面不一致，有点麻烦。)
 - [ ] 数据缓存至本地
-- [ ] ~~做一些可视化~~（遇到了一些难点，可能做不了。）
+- [ ] 分页？
 
-# 展示（过时）
+# 展示
 
 仅作参考，建议查看 [Demo](https://leay.net/2020/02/09/hexo-douban-getter/#展示-demo) 。
 
-## 读过书籍
+[所有截图示例](https://github.com/hqweay/hexo-douban-getter/tree/master/examples)
 
-![](https://github.com/hqweay/hexo-douban-getter/blob/master/examples/readBooks.png?raw=true)
+## 能在状态间切换啦
 
-## 看过影视
-
-![](https://github.com/hqweay/hexo-douban-getter/blob/master/examples/watchedMovies.png?raw=true)
-
-## ...
-
-其它的就不一一列举了...
+![](https://github.com/hqweay/hexo-douban-getter/blob/master/examples/change.png?raw=true)
 
 # 说明
 
