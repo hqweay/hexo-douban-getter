@@ -1,6 +1,6 @@
 # Demo
 
-**Demo** ：（页面可能会失效。）
+**Demo** ：
 
 [豆瓣标记为看过影视列表展示 Demo](https://leay.net/2020/02/09/hexo-douban-getter/#展示-demo)
 
@@ -53,7 +53,9 @@ const DoubanTypeEnum = {
 - [ ] 数据缓存至本地
 - [ ] ~~做一些可视化~~（遇到了一些难点，可能做不了。）
 
-# 展示
+# 展示（过时）
+
+仅作参考，建议查看 [Demo](https://leay.net/2020/02/09/hexo-douban-getter/#展示-demo) 。
 
 ## 读过书籍
 

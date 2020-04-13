@@ -1,5 +1,4 @@
 function movieTemplateRender(item) {
-  console.log(item);
   return `
     <div class="hexo-douban-movie" style="position:relative;width:60%;border:1px solid #666;border-radius: 4px;margin:10px auto;padding: 10px;"> 
       <div class ="pic" style="width: 50%;">
@@ -24,7 +23,7 @@ function movieTemplateRender(item) {
         <div class ="hexo-douban-date">
         标记时间：${item.date}
       </div>
-    </div>`;
+      </div>`;
 }
 
 function bookTemplateRender(item) {
