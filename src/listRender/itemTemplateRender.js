@@ -1,4 +1,5 @@
 function movieTemplateRender(item) {
+  console.log(item);
   return `
     <div class="hexo-douban-movie" style="position:relative;width:60%;border:1px solid #666;border-radius: 4px;margin:10px auto;padding: 10px;"> 
       <div class ="pic" style="width: 50%;">
@@ -6,18 +7,21 @@ function movieTemplateRender(item) {
         style="width:135px; height:192px; display:inline-block; margin-right:14px;"  referrerpolicy="no-referrer" 
        />
       </div>
-      <div class ="title">
+      <div class ="hexo-douban-title">
         <a href="${item.url}" target="_blank">
         ${item.title}
         </a>
       </div>
-      <div class ="comment">
+      <div class ="hexo-douban-rate">
+        评分：${item.rate}
+      </div>
+      <div class ="hexo-douban-comment">
         评论：${item.comment}
       </div>
-      <div class ="tags">
+      <div class ="hexo-douban-tags">
         标签：${item.tags}
       </div>
-        <div class ="date">
+        <div class ="hexo-douban-date">
         标记时间：${item.date}
       </div>
     </div>`;
@@ -31,21 +35,24 @@ function bookTemplateRender(item) {
         style="width: 135px; height: 192px; display:inline-block; margin-right: 14px;"  referrerpolicy="no-referrer" 
        />
       </div>
-      <div class ="title">
+      <div class ="hexo-douban-title">
         <a href="${item.url}" target="_blank">
         ${item.title}
         </a>
       </div>
-       <div class ="pub">
+      <div class ="hexo-douban-rate">
+        评分：${item.rate}
+      </div>
+      <div class ="hexo-douban-pub">
         出版信息：${item.pub}
       </div>
-       <div class ="date">
+      <div class ="hexo-douban-date">
         标记时间：${item.date}
       </div>
-      <div class ="comment">
+      <div class ="hexo-douban-comment">
         评论：${item.comment}
       </div>
-      <div class ="tags">
+      <div class ="hexo-douban-tags">
         标签：${item.tags}
       </div>
     </div>`;
@@ -59,21 +66,24 @@ function musicTemplateRender(item) {
         style="width: 135px; height: 192px; display:inline-block; margin-right: 14px;"  referrerpolicy="no-referrer" 
        />
       </div>
-      <div class ="title">
+      <div class ="hexo-douban-title">
         <a href="${item.url}" target="_blank">
         ${item.title}
         </a>
       </div>
-       <div class ="intro">
+      <div class ="hexo-douban-rate">
+        评分：${item.rate}
+      </div>
+      <div class ="hexo-douban-intro">
         介绍：${item.intro}
       </div>
-       <div class ="date">
+       <div class ="hexo-douban-date">
         标记时间：${item.date}
       </div>
-      <div class ="comment">
+      <div class ="hexo-douban-comment">
         评论：${item.comment}
       </div>
-      <div class ="tags">
+      <div class ="hexo-douban-tags">
         标签：${item.tags}
       </div>
     </div>`;
@@ -87,21 +97,24 @@ function gameTemplateRender(item) {
         style="width: 135px; height: 192px; display:inline-block; margin-right: 14px;"  referrerpolicy="no-referrer" 
        />
       </div>
-      <div class ="title">
+      <div class ="hexo-douban-title">
         <a href="${item.url}" target="_blank">
         ${item.title}
         </a>
       </div>
-       <div class ="intro">
+      <div class ="hexo-douban-rate">
+        评分：${item.rate}
+      </div>
+      <div class ="hexo-douban-intro">
         介绍：${item.intro}
       </div>
-       <div class ="date">
+       <div class ="hexo-douban-date">
         标记时间：${item.date}
       </div>
-      <div class ="comment">
+      <div class ="hexo-douban-comment">
         评论：${item.comment}
       </div>
-      <div class ="tags">
+      <div class ="hexo-douban-tags">
         标签：${item.tags}
       </div>
     </div>`;
