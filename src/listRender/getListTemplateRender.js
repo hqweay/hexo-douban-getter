@@ -18,7 +18,39 @@ function getListTemplateRender(type, data, titleLevel) {
       listHtml += gameTemplateRender(data[index]);
     }
   }
-  listHtml += "</div>";
+  // 通用 JS 放这
+  listHtml += `
+  <script>
+  function imgError(that){
+   that.style.display = "none";
+  }
+  function change(that){
+    let done = document.getElementById("hexo-douban-done");
+    let doing = document.getElementById("hexo-douban-doing");
+    let todo = document.getElementById("hexo-douban-todo");
+    done.style.display = "none";
+    doing.style.display = "none";
+    todo.style.display = "none";
+    if(that.id === "nav-done"){
+      done.style.display = "block";
+    }else if(that.id === "nav-doing"){
+      doing.style.display = "block";
+    }else if(that.id === "nav-todo"){
+      todo.style.display = "block";
+    }
+  }
+  </script>
+  </div>`;
   return listHtml;
+
+  // <script>
+  // 通过判断浏览器隐藏
+  // if(navigator.userAgent.indexOf("Safari") > -1){
+  //   console.log(navigator.userAgent);
+  //   document.querySelectorAll('.hexo-douban-pic').forEach((img)=>{
+  //     img.style.display = "none";
+  //   })
+  // }
+  // </script>  
 }
 module.exports = getListTemplateRender;

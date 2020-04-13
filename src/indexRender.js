@@ -6,23 +6,7 @@ async function indexRender(config) {
 
   let indexPage = `
   <div class = "hexo-douban-index">
-  <script>
-  function change(that){
-    let done = document.getElementById("hexo-douban-done");
-    let doing = document.getElementById("hexo-douban-doing");
-    let todo = document.getElementById("hexo-douban-todo");
-    done.style.display = "none";
-    doing.style.display = "none";
-    todo.style.display = "none";
-    if(that.id === "nav-done"){
-      done.style.display = "block";
-    }else if(that.id === "nav-doing"){
-      doing.style.display = "block";
-    }else if(that.id === "nav-todo"){
-      todo.style.display = "block";
-    }
-  }
-  </script>
+
     <div class="hexo-douban-nav">
       <button id="nav-done" onclick="change(this)">
       ${config.type === "book" ? "读过" : config.type === "movie" ? "看过" : config.type === "music" ? "听过" : config.type === "game" ? "玩过" : ""}
