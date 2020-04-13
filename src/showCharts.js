@@ -1,3 +1,4 @@
+// @deprected
 const { createDoubanDataGetter, DoubanTypeEnum } = require('douban-getter');
 let getTagCloud = require('hexo-douban-getter/src/chartRender/getTagCloud');
 

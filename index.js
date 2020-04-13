@@ -1,21 +1,26 @@
 let showDoubanList = require('./src/showDoubanList');
-let showCharts = require('./src/showCharts');
+// let showCharts = require('./src/showCharts');
+let indexRender = require('./src/indexRender');
 
 hexo.extend.tag.register('douban', function (args) {
-  let userName, type, pageStart, pageEnd;
   if (args[0] === "charts") {
-    userName = args[1];
-    type = args[2];
-    pageStart = args[3];
-    pageEnd = args[4];
-    return showCharts(userName, type, pageStart, pageEnd);
+
+  } else if (args[0] === "book" || args[0] === "movie" || args[0] === "music" || args[0] === "game") {
+    return indexRender({
+      type: args[0],
+      userName: args[1],
+      pageStart: args[2] || 1,
+      pageEnd: args[3] || 1,
+      titleLevel: args[4] || "h3"
+    });
   } else {
-    userName = args[0];
-    type = args[1];
-    pageStart = args[2];
-    pageEnd = args[3];
-    titleLevel = args[4] || "h3";
-    return showDoubanList(userName, type, pageStart, pageEnd, titleLevel);
+    return showDoubanList({
+      userName: args[0],
+      type: args[1],
+      pageStart: args[2] || 1,
+      pageEnd: args[3] || 1,
+      titleLevel: args[4] || "h3"
+    });
   }
 
 

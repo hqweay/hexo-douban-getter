@@ -1,7 +1,12 @@
 const { createDoubanDataGetter, DoubanTypeEnum } = require('douban-getter');
 let getListTemplateRender = require('hexo-douban-getter/src/listRender/getListTemplateRender');
 
-function showDoubanList(userName, type, pageStart, pageEnd, titleLevel) {
+function showDoubanList(config) {
+  let userName = config.userName;
+  let type = config.type;
+  let pageStart = config.pageStart;
+  let pageEnd = config.pageEnd;
+  let titleLevel = config.titleLevel;
   switch (type) {
     case DoubanTypeEnum.watchedMovies:
       let getDoubanWatchedMovies = createDoubanDataGetter(DoubanTypeEnum.watchedMovies);
