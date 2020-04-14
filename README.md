@@ -1,20 +1,20 @@
-# ChangeLog
+## ChangeLog
 
 2020-04-13：支持某类别标记数据的展示，并提供状态间的切换按钮。比如书籍有看过、在看、想看三种状态，现在可以在一个页面展示并切换显示。
 
-# Demo
+## Demo
 
 **Demo** ：
 
-[豆瓣的书籍标记数据展示 Demo](https://leay.net/2020/02/09/hexo-douban-getter/#展示-demo)
+[豆瓣的书籍标记数据展示 Demo](https://leay.net/2020/04/13/hexo-douban-getter/#Demo)
 
-# 使用
+## 使用
 
 ```bash
 yarn add https://github.com/hqweay/hexo-douban-getter.git
 ```
 
-## 展示单项标记数据
+### 展示单项标记数据
 
 展示看过的影视、读过的书籍……
 
@@ -26,7 +26,7 @@ yarn add https://github.com/hqweay/hexo-douban-getter.git
 {% douban "hqweay" "watchedMovies" 1 3 h3 %}
 ```
 
-### 参数说明
+#### 参数说明
 
 | 参数       | 说明                                    |
 | ---------- | --------------------------------------- |
@@ -36,7 +36,7 @@ yarn add https://github.com/hqweay/hexo-douban-getter.git
 | pageEnd    | 获取数据结束页                          |
 | titleLevel | 【可选】标记数据的标题层级，默认为 h3。 |
 
-### type 支持参数
+#### type 支持参数
 
 ```javascript
 const DoubanTypeEnum = {
@@ -55,7 +55,7 @@ const DoubanTypeEnum = {
 }
 ```
 
-## 展示某类别标记数据
+### 展示某类别标记数据
 
 展示影视对应的看过、在看、想看，书籍对应的读过、在读、想读……三种状态的标记数据。
 
@@ -69,7 +69,7 @@ const DoubanTypeEnum = {
 {% douban book "hqweay" 1 1 %}
 ```
 
-## 参数说明
+### 参数说明
 
 | 参数       | 说明                                    |
 | ---------- | --------------------------------------- |
@@ -79,29 +79,29 @@ const DoubanTypeEnum = {
 | pageEnd    | 获取数据结束页                          |
 | titleLevel | 【可选】标记数据的标题层级，默认为 h3。 |
 
-### type 支持参数
+#### type 支持参数
 
 * book
 * movie
 * music
 * game
 
-# TODO
+## TODO
 
 - [ ] 数据缓存至本地
 - [ ] 分页？
 
-# 展示
+## 展示
 
-仅作参考，建议查看 [Demo](https://leay.net/2020/02/09/hexo-douban-getter/#展示-demo) 。
+仅作参考，建议查看 [Demo](https://leay.net/2020/04/13/hexo-douban-getter/Demo) 。
 
 [所有截图示例](https://github.com/hqweay/hexo-douban-getter/tree/master/examples)
 
-## 能在状态间切换啦
+### 能在状态间切换啦
 
 ![](https://github.com/hqweay/hexo-douban-getter/blob/master/examples/change.png?raw=true)
 
-# 说明
+## 说明
 
 该项目使用了 [douban-getter](https://github.com/hqweay/douban-getter) 提供的获取豆瓣标记数据的方法。
 
