@@ -6,7 +6,7 @@
 
 **Demo** ：
 
-[豆瓣的书籍标记数据展示 Demo](https://leay.net/2020/04/13/hexo-douban-getter/#Demo)
+[豆瓣的书籍标记数据展示 Demo](https://leay.net/2020/04/13/hexo-douban-getter/#demo)
 
 ## 使用
 
@@ -93,7 +93,7 @@ const DoubanTypeEnum = {
 
 ## 展示
 
-仅作参考，建议查看 [Demo](https://leay.net/2020/04/13/hexo-douban-getter/Demo) 。
+仅作参考，建议查看 [Demo](https://leay.net/2020/04/13/hexo-douban-getter/#demo) 。
 
 [所有截图示例](https://github.com/hqweay/hexo-douban-getter/tree/master/examples)
 
