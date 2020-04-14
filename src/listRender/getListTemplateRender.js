@@ -7,7 +7,7 @@ function getListTemplateRender(type, data, titleLevel) {
   let listHtml = '<div class="hexo-douban-getter-movies">';
   // listHtml += `<h2>${type}</h2>`;
   for (let index in data) {
-    listHtml += `<${titleLevel}>${data[index].title || data[index].name}</${titleLevel}> `;
+    listHtml += `<${titleLevel} id = "${data[index].title || data[index].name} - ${Math.floor(Math.random() * (99 - 0)) + 0}">${data[index].title || data[index].name}</${titleLevel}> `;
     if (type === DoubanTypeEnum.watchedMovies || type === DoubanTypeEnum.wishMovies || type === DoubanTypeEnum.watchingMovies) {
       listHtml += movieTemplateRender(data[index]);
     } else if (type === DoubanTypeEnum.readBooks || type === DoubanTypeEnum.wishBooks || type === DoubanTypeEnum.readingBooks) {
