@@ -24,21 +24,6 @@ function getListTemplateRender(type, data, titleLevel) {
   function imgError(that){
    that.style.display = "none";
   }
-  function change(that){
-    let done = document.getElementById("hexo-douban-done");
-    let doing = document.getElementById("hexo-douban-doing");
-    let todo = document.getElementById("hexo-douban-todo");
-    done.style.display = "none";
-    doing.style.display = "none";
-    todo.style.display = "none";
-    if(that.id === "nav-done"){
-      done.style.display = "block";
-    }else if(that.id === "nav-doing"){
-      doing.style.display = "block";
-    }else if(that.id === "nav-todo"){
-      todo.style.display = "block";
-    }
-  }
   </script>
   </div>`;
   return listHtml;
