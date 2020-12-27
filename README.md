@@ -2,6 +2,8 @@
 
 2020-04-13：支持某类别标记数据的展示，并提供状态间的切换按钮。比如书籍有看过、在看、想看三种状态，现在可以在一个页面展示并切换显示。
 
+**有自定义需求的朋友可以魔改代码或者利用  [douban-getter](https://github.com/hqweay/douban-getter) 写自己的插件。**
+
 ## Demo
 
 **Demo** ：
@@ -106,4 +108,3 @@ const DoubanTypeEnum = {
 该项目使用了 [douban-getter](https://github.com/hqweay/douban-getter) 提供的获取豆瓣标记数据的方法。
 
 开发过程中参考了 [hexo-tag-douban](https://github.com/YuyingWu/hexo-tag-douban)
-
