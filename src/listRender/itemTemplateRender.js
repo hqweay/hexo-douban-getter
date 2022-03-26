@@ -137,7 +137,7 @@ function singleMovieTemplateRender(item) {
         评分：${item.rate}
       </div>
       <div class ="hexo-douban-intro">
-        简介${item.intro.length > 50 ? item.intro.substring(0, 50) + "..." : item.intro}
+        简介：${item.intro.length > 50 ? item.intro.substring(0, 50) + "..." : item.intro}
       </div>
       </div>`;
 }
@@ -159,7 +159,7 @@ function singleBookTemplateRender(item) {
         评分：${item.rate}
       </div>
       <div class ="hexo-douban-intro">
-        简介${item.intro.length > 50 ? item.intro.substring(0, 50) + "..." : item.intro}
+        简介：${item.intro.length > 50 ? item.intro.substring(0, 50) + "..." : item.intro}
       </div>
     </div>`;
 }
