@@ -28,7 +28,7 @@ function movieTemplateRender(item) {
 
 function bookTemplateRender(item) {
   return `
-    <div class="hexo-douban-movie" style="position:relative;width:60%;border:1px solid #666;border-radius: 4px;margin:10px auto;padding: 10px;">
+    <div class="hexo-douban-book" style="position:relative;width:60%;border:1px solid #666;border-radius: 4px;margin:10px auto;padding: 10px;">
     <div class ="hexo-douban-pic" style="width: 50%;">
        <img src="${item.pic}" onerror="imgError(this)"
         style="width: 135px; height: 192px; display:inline-block; margin-right: 14px;"  referrerpolicy="no-referrer" 
@@ -59,7 +59,7 @@ function bookTemplateRender(item) {
 
 function musicTemplateRender(item) {
   return `
-    <div class="hexo-douban-movie" style="position:relative;width:60%;border:1px solid #666;border-radius: 4px;margin:10px auto;padding: 10px;"> 
+    <div class="hexo-douban-music" style="position:relative;width:60%;border:1px solid #666;border-radius: 4px;margin:10px auto;padding: 10px;"> 
       <div class ="hexo-douban-pic" style="width: 50%;">
        <img src="${item.pic}" onerror="imgError(this)""
         style="width: 135px; height: 192px; display:inline-block; margin-right: 14px;"  referrerpolicy="no-referrer" 
@@ -90,7 +90,7 @@ function musicTemplateRender(item) {
 
 function gameTemplateRender(item) {
   return `
-    <div class="hexo-douban-movie" style="position:relative;width:60%;border:1px solid #666;border-radius: 4px;margin:10px auto;padding: 10px;">
+    <div class="hexo-douban-game" style="position:relative;width:60%;border:1px solid #666;border-radius: 4px;margin:10px auto;padding: 10px;">
     </script>
       <div class ="hexo-douban-pic" style="width: 50%;">
        <img src="${item.pic}" onerror="imgerror(this)"
@@ -120,4 +120,50 @@ function gameTemplateRender(item) {
     </div>`;
 }
 
-module.exports = { movieTemplateRender, bookTemplateRender, musicTemplateRender, gameTemplateRender };
+function singleMovieTemplateRender(item) {
+  return `
+    <div class="hexo-douban-movie" style="position:relative;width:60%;border:1px solid #666;border-radius: 4px;margin:10px auto;padding: 10px;"> 
+    <div class ="hexo-douban-pic" style="width: 50%;">
+       <img src="${item.pic}" onerror="imgError(this)"
+        style="width:135px; height:192px; display:inline-block; margin-right:14px;"  referrerpolicy="no-referrer" 
+       />
+      </div>
+      <div class ="hexo-douban-title">
+        <a href="${item.url}" target="_blank">
+        ${item.title}
+        </a>
+      </div>
+      <div class ="hexo-douban-rate">
+        评分：${item.rate}
+      </div>
+      <div class ="hexo-douban-intro">
+        简介${item.intro.length > 50 ? item.intro.substring(0, 50) + "..." : item.intro}
+      </div>
+      </div>`;
+}
+
+function singleBookTemplateRender(item) {
+  return `
+    <div class="hexo-douban-book" style="position:relative;width:60%;border:1px solid #666;border-radius: 4px;margin:10px auto;padding: 10px;">
+    <div class ="hexo-douban-pic" style="width: 50%;">
+       <img src="${item.pic}" onerror="imgError(this)"
+        style="width: 135px; height: 192px; display:inline-block; margin-right: 14px;"  referrerpolicy="no-referrer" 
+       />
+      </div>
+      <div class ="hexo-douban-title">
+        <a href="${item.url}" target="_blank">
+        ${item.title}
+        </a>
+      </div>
+      <div class ="hexo-douban-rate">
+        评分：${item.rate}
+      </div>
+      <div class ="hexo-douban-intro">
+        简介${item.intro.length > 50 ? item.intro.substring(0, 50) + "..." : item.intro}
+      </div>
+    </div>`;
+}
+module.exports = {
+  movieTemplateRender, bookTemplateRender, musicTemplateRender,
+  gameTemplateRender, singleMovieTemplateRender, singleBookTemplateRender
+};
